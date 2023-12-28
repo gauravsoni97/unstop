@@ -1,0 +1,77 @@
+.assessment_heading {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #1c4980;
+}
+
+.assessment_item_heading {
+  color: #1c4980;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 1.225rem */
+}
+
+.imgIcon {
+  border-radius: 0.5rem;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_count {
+  margin: 1rem 0;
+}
+
+.countnum_main {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 1.75rem */
+}
+
+.countnum_green {
+  color: var(--Status-Success, #05c165);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.05rem */
+  margin-left: 0.5rem;
+}
+
+.count_about {
+  color: #1c4980;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.05rem */
+}
+
+.assessment_box {
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+  border: 1px solid var(--System-stroke2, #dadce0);
+}
+
+.assessment_item {
+  padding: 1rem 1.2rem;
+}
+.assessment_item:nth-child(2) {
+  border-left: 1px solid var(--System-stroke2, #dadce0);
+}
+.assessment_item:nth-child(3) {
+  border-left: 1px solid var(--System-stroke2, #dadce0);
+}
+.assessment_item:nth-child(4) {
+  border-left: 1px solid var(--System-stroke2, #dadce0);
+}

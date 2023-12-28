@@ -9,3 +9,57 @@
 body{
   background-color: #F6F8FA !important;
 }
+
+
+/* --------- custom classes ---------- */
+
+.whiteRoundCard{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+
+/* ================== Flexbox Classes ============== */
+
+.flex-aic {
+  display: flex;
+  align-items: center;
+}
+.flex-aicjcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-aicjcsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-aifsjcsb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-aicjccfdc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flexgap1 {
+  gap: 1rem;
+}
+.flexgap2 {
+  gap: 2rem;
+}
+.flexgap3 {
+  gap: 3rem;
+}
+.flexgap4 {
+  gap: 4rem;
+}
+
+
