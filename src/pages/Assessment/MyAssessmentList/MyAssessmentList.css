@@ -1,0 +1,145 @@
+.cardsListParent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.createNewAssessmentCard {
+  border-radius: 0.75rem;
+  border: 1px dashed var(--System-stroke2, #dadce0);
+  background: var(--System-Background, #f6f8fa);
+  padding: 1.875rem;
+  cursor: pointer;
+}
+.plusbtn {
+  background-color: white;
+  display: flex;
+  width: 4.375rem;
+  height: 4.375rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 50%;
+  color: #0073e6;
+  margin-bottom: 1rem;
+}
+.uploadAssessmentCard {
+  flex-direction: column;
+}
+.newAssessment_Heading {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.newAssessment_Para {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0.75rem;
+}
+
+.AssessmentCardParent {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--System-stroke2, #dadce0);
+  background: var(--Text-White, #fff);
+  position: relative;
+
+  min-height: 250px;
+}
+
+.AssessmentCardParent_BottomSection {
+  position: absolute;
+  bottom: 0rem;
+  border-top: 1px dashed #dadce0;
+  width: calc(100% - 2rem);
+  padding: 1rem 0;
+}
+
+.card_title {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.575rem */
+  margin-top: 1rem;
+}
+
+.jobAboutTxt {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 1.225rem */
+}
+.divider_jobAboutTxt {
+  color: #dadce0;
+  margin: 0.3rem;
+}
+.caltextparent {
+  gap: 0.3rem;
+}
+.calText {
+  color: var(--Primary-50, #8da4bf);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.leftTimer {
+  gap: 0.7rem;
+}
+.duration,
+.questions {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.05rem */
+}
+.durationNum,
+.questionsnum {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 1.225rem */
+}
+
+.linkbtn {
+  display: flex;
+  height: 1.875rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 3.125rem;
+  border: 1px solid var(--text-100, #1c4980);
+  background: var(--Text-White, #fff);
+  cursor: pointer;
+}
+
+.RightShare {
+  gap: 0.6rem;
+}
