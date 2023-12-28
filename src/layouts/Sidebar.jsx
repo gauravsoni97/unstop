@@ -37,11 +37,15 @@ const Sidebar = () => {
             }}
             sx={{
               cursor: "pointer",
+             
+              border:
+              path === menuItem.rootpath ? "2px solid #0073E6" : "transparent",
               backgroundColor:
-                path === menuItem.rootpath ? "#F5F5F7" : "transparent",
+                path === menuItem.rootpath ? "#E5F1FC" : "transparent",
               "&:hover": {
-                backgroundColor: "#eee", // Add a different background color on hover
+                backgroundColor: "#E5F1FC", 
               },
+              padding:"10px 20px",
             }}
             button
             style={{
@@ -82,9 +86,9 @@ const Sidebar = () => {
       <div
         style={{
           margin: "1rem auto",
-          width: "80%",
+          width: "70%",
           height: "1px",
-          border: "1px dotted gray",
+          border: "1px dashed gray",
         }}
       ></div>
       <center>
