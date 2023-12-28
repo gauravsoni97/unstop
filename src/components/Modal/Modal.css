@@ -1,11 +1,22 @@
 .modalHeader {
   border-bottom: 1px solid var(--System-stroke2, #dadce0);
   background: #fff;
-  padding: 1.88rem;
+  padding: 1rem 1.88rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .ModalFields {
-  padding: 1.88rem;
+  padding: 1.5rem 1.88rem;
+}
+.modalHeaderHeading {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .inputFieldsHeading {
@@ -19,7 +30,6 @@
 
 .assignment_inputfield {
   display: flex;
-  height: 3.125rem;
   padding: 0.9375rem;
   align-items: center;
   gap: 0.625rem;
@@ -29,4 +39,25 @@
   border: 1px solid var(--System-stroke2, #dadce0);
   background: #fff;
   margin-top: 0.62rem;
+  outline: none;
+}
+
+.inputFields {
+  margin-bottom: 1.25rem;
+}
+
+.formSubmitbtn {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--Secondary-1, #0073e6);
+  width: 100%;
+  color: white;
+  outline: none;
+  border: none;
 }
