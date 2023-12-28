@@ -20,20 +20,26 @@ import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 import { itSkills } from "../../Skills";
 
 const CreateAssessment = ({ open, handleClose, handleOpen }) => {
-  const [age, setAge] = useState("");
+  const [testFor, setTestFor] = useState(10);
+  const [descriptionType, setDescriptionType] = useState(10);
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setTestFor(event.target.value);
+  };
+  const handleChangeDesc = (event) => {
+    setDescriptionType(event.target.value);
   };
 
-  const onSubmit = () => {};
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
 
   const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "40vw",
+    width: "35vw",
     bgcolor: "background.paper",
     boxShadow: 24,
     outline: "none",
@@ -68,15 +74,14 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
               <h3 className="inputFieldsHeading">Purpose of the test is</h3>
               <FormControl fullWidth>
                 <Select
-                  value={age}
+                  value={testFor}
                   onChange={handleChange}
+                  defaultValue={"standard"}
                   style={{ width: "100%", marginTop: ".62rem" }}
                 >
-                  <MenuItem>Ten</MenuItem>
-                  <MenuItem value="">Ten</MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>Job</MenuItem>
+                  <MenuItem value={20}>Test</MenuItem>
+                  <MenuItem value={30}>Random</MenuItem>
                 </Select>
               </FormControl>
             </div>
@@ -85,11 +90,12 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
               <h3 className="inputFieldsHeading">Description</h3>
               <FormControl fullWidth>
                 <Select
-                  value={age}
-                  onChange={handleChange}
+                  value={descriptionType}
+                  onChange={handleChangeDesc}
+                  defaultValue={"standard"}
                   style={{ width: "100%", marginTop: ".62rem" }}
                 >
-                  <MenuItem value={10}>Ten</MenuItem>
+                  <MenuItem value={10}>Select</MenuItem>
                   <MenuItem value={20}>Twenty</MenuItem>
                   <MenuItem value={30}>Thirty</MenuItem>
                 </Select>
@@ -112,6 +118,15 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
                       placeholder="Type here"
                     />
                   )}
+                  renderTags={(value, getTagProps) =>
+                    value.map((option, index) => (
+                      <Chip
+                        label={option.title}
+                        style={{ color: "#1C4980", backgroundColor: "#DDEDFF" }}
+                        {...getTagProps({ index })}
+                      />
+                    ))
+                  }
                 />
               </Stack>
             </div>
