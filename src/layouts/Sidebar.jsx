@@ -44,19 +44,22 @@ const Sidebar = () => {
               },
             }}
             button
-            style={{ borderRadius: ".5rem", marginBottom: ".3rem" }}
+            style={{
+              borderRadius: ".5rem",
+              marginBottom: ".3rem",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
-            <ListItemIcon
-              style={{
-                maxWidth: "1rem",
-                margin: "auto",
-              }}
-            >
+            <ListItemIcon>
               <img
                 style={{
-                  height: "24px",
-                  width: "24px",
-                  minWidth: "1rem",
+                  height: "auto",
+                  width: "100%",
+                  maxWidth: "1rem",
+                  margin: "0 auto",
                   color: path === menuItem.rootpath ? "black" : "#8E92BC",
                 }}
                 src={menuItem?.icon}
@@ -108,7 +111,14 @@ const Sidebar = () => {
             },
           }}
           button
-          style={{ borderRadius: ".5rem", marginBottom: ".3rem" }}
+          style={{
+            borderRadius: ".5rem",
+            marginBottom: ".3rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
           <ListItemIcon
             style={{
@@ -118,9 +128,10 @@ const Sidebar = () => {
           >
             <img
               style={{
-                height: "24px",
-                width: "24px",
-                minWidth: "1rem",
+                height: "auto",
+                width: "100%",
+                maxWidth: "1rem",
+                margin: "0 auto",
                 color: path === menuItem.rootpath ? "black" : "#8E92BC",
               }}
               src={menuItem?.icon}

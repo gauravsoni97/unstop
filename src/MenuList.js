@@ -1,12 +1,10 @@
 
 import _ from "lodash";
-
-import WidgetsIcon from '@mui/icons-material/Widgets';
-
+import Dashboard  from "../src/assets/sidebar/Vector.svg";
 const MenuList = [
   {
     text: "Dashboard",
-    icon: WidgetsIcon, 
+    icon: Dashboard, 
     rootpath: "Dashboard", 
     url: "/Dashboard", 
     active: false,
@@ -14,7 +12,7 @@ const MenuList = [
   },
   {
     text: "Assessment",
-    icon: WidgetsIcon, 
+    icon: Dashboard, 
     rootpath: "Assessment", 
     url: "/Assessment", 
     active: false,
