@@ -44,7 +44,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 1.05rem */
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 .count_about {
@@ -61,6 +61,9 @@
   margin: 1rem 0;
   border-radius: 0.75rem;
   border: 1px solid var(--System-stroke2, #dadce0);
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr 1fr;
 }
 
 .assessment_item {
@@ -74,4 +77,11 @@
 }
 .assessment_item:nth-child(4) {
   border-left: 1px solid var(--System-stroke2, #dadce0);
+}
+
+
+.customborderLeft{
+    border-left: 1px solid var(--System-stroke2, #dadce0);
+    padding-left: 1rem;
+
 }
