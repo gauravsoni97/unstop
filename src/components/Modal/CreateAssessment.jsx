@@ -33,6 +33,7 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
         <div className="ModalFields">
           <div className="inputFields">
             <h3 className="inputFieldsHeading">Name of assessment</h3>
+            <input type="text" className="assignment_inputfield" placeholder="Type Here" />
           </div>
           
         </div>

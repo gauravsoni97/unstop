@@ -1,18 +1,32 @@
-.modalHeader{
-    border-bottom: 1px solid var(--System-stroke2, #DADCE0);
-    background: #FFF;
-    padding: 1.88rem;
+.modalHeader {
+  border-bottom: 1px solid var(--System-stroke2, #dadce0);
+  background: #fff;
+  padding: 1.88rem;
 }
 
-.ModalFields{
-    padding: 1.88rem;
+.ModalFields {
+  padding: 1.88rem;
 }
 
-.inputFieldsHeading{
-    color: var(--text-100, #1C4980);
-font-family: Inter;
-font-size: 1rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.inputFieldsHeading {
+  color: var(--text-100, #1c4980);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.assignment_inputfield {
+  display: flex;
+  height: 3.125rem;
+  padding: 0.9375rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--System-stroke2, #dadce0);
+  background: #fff;
+  margin-top: 0.62rem;
 }
