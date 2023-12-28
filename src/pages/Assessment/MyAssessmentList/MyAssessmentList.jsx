@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyAssessmentList.css";
 import AddIcon from '@mui/icons-material/Add';
 import AssessmentCard from "../../../components/AssessmentCard/AssessmentCard";
+import CreateAssessment from "../../../components/Modal/CreateAssessment";
 const MyAssessmentList = () => {
+    const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
+    <>
+    <CreateAssessment open={open} handleOpen={handleOpen} handleClose={handleClose} />
+
     <section className="assessment_sections">
       <h2 className="assessment_heading">My Assessment</h2>
 
       <div className="cardsListParent">
-        <div className="createNewAssessmentCard flex-aicjcc">
+        <div className="createNewAssessmentCard flex-aicjcc" onClick={handleOpen}>
           <div className="uploadAssessmentCard flex-aicjcc">
             <div className="plusbtn">
               <AddIcon/>
@@ -30,6 +37,7 @@ const MyAssessmentList = () => {
           <AssessmentCard />
       </div>
     </section>
+    </>
   );
 };
 

@@ -46,9 +46,42 @@ const AssessmentCard = () => {
           </button>
 
           <AvatarGroup max={3}>
-            <Avatar sx={{width:26, height:26, marginRight:"-.5rem", fontSize:".8rem", bgcolor: "#E9407A", padding:".3rem" }}>LP</Avatar>
-            <Avatar sx={{width:26, height:26, marginRight:"-.5rem", fontSize:".8rem", bgcolor: "#3079E1", padding:".3rem" }}>LP</Avatar>
-            <Avatar sx={{width:26, height:26, marginRight:"-.5rem", fontSize:".8rem", bgcolor: "#6548EE", padding:".3rem" }}>LP</Avatar>
+            <Avatar
+              sx={{
+                width: 26,
+                height: 26,
+                marginRight: "-.5rem",
+                fontSize: ".8rem",
+                bgcolor: "#E9407A",
+                padding: ".3rem",
+              }}
+            >
+              LP
+            </Avatar>
+            <Avatar
+              sx={{
+                width: 26,
+                height: 26,
+                marginRight: "-.5rem",
+                fontSize: ".8rem",
+                bgcolor: "#3079E1",
+                padding: ".3rem",
+              }}
+            >
+              LP
+            </Avatar>
+            <Avatar
+              sx={{
+                width: 26,
+                height: 26,
+                marginRight: "-.5rem",
+                fontSize: ".8rem",
+                bgcolor: "#6548EE",
+                padding: ".3rem",
+              }}
+            >
+              LP
+            </Avatar>
           </AvatarGroup>
         </div>
       </div>

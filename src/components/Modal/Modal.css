@@ -1,0 +1,18 @@
+.modalHeader{
+    border-bottom: 1px solid var(--System-stroke2, #DADCE0);
+    background: #FFF;
+    padding: 1.88rem;
+}
+
+.ModalFields{
+    padding: 1.88rem;
+}
+
+.inputFieldsHeading{
+    color: var(--text-100, #1C4980);
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
