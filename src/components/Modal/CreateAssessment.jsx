@@ -39,11 +39,9 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
 
   const style = {
     position: "absolute",
-    top: isTabletOrMobile ? "10%" : "50%",
+    top: "50%",
     left: "50%",
-    transform: isTabletOrMobile
-      ? "translate(-50%, 0%)"
-      : "translate(-50%, -50%)",
+    transform: "translate(-50%, -50%)",
     width: isTabletOrMobile ? "95vw" : "35vw",
     bgcolor: "background.paper",
     boxShadow: 24,
