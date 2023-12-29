@@ -63,3 +63,34 @@
   cursor: pointer;
 }
 
+@media screen and (width <= 600px) {
+  .modalHeader {
+    padding: 0.5rem 1rem;
+  }
+
+  .ModalFields {
+    padding: 1rem;
+  }
+  .modalHeaderHeading {
+    font-size: 0.9rem;
+  }
+
+  .inputFieldsHeading {
+    font-size: 0.85rem;
+  }
+
+  .assignment_inputfield {
+    padding: 0 0.6rem;
+    gap: 0rem;
+    margin-top: 0.32rem;
+  }
+
+  .inputFields {
+    margin-bottom: .5rem;
+  }
+
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input, .MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root, .css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input,  .MuiAutocomplete-hasClearIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root,
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 0.5rem !important;
+  }
+}

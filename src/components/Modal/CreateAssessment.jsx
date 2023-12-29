@@ -16,10 +16,13 @@ import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+import { useMediaQuery } from "react-responsive";
 
 import { itSkills } from "../../Skills";
 
 const CreateAssessment = ({ open, handleClose, handleOpen }) => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 924px)" });
+
   const [testFor, setTestFor] = useState(10);
   const [descriptionType, setDescriptionType] = useState(10);
 
@@ -36,14 +39,17 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
 
   const style = {
     position: "absolute",
-    top: "50%",
+    top: isTabletOrMobile ? "10%" : "50%",
     left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "35vw",
+    transform: isTabletOrMobile
+      ? "translate(-50%, 0%)"
+      : "translate(-50%, -50%)",
+    width: isTabletOrMobile ? "95vw" : "35vw",
     bgcolor: "background.paper",
     boxShadow: 24,
     outline: "none",
     borderRadius: "0.5rem",
+    height: "max-content",
   };
   return (
     <Modal
