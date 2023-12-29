@@ -70,7 +70,6 @@ line-height: normal;
   margin: 1rem 0;
   border-radius: 0.75rem;
   border: 1px solid var(--System-stroke2, #dadce0);
-
   display: grid;
   grid-template-columns: 1fr 1.5fr 2fr 1fr;
 }
@@ -94,3 +93,23 @@ line-height: normal;
     padding-left: 1rem;
 
 }
+
+
+@media screen and (width <= 900px) {
+  .assessment_box {
+    margin: 1rem 0;
+    border-radius: 0.75rem;
+    border: 1px solid var(--System-stroke2, #dadce0);
+    display: flex;
+    flex-direction: column;  }
+  }
+
+  .assessment_box div:nth-child(1){
+    order: 1;
+  } 
+  .assessment_box div:nth-child(2){
+    order: 3;
+  } 
+  .assessment_box div:nth-child(3){
+    order: 3;
+  } 

@@ -143,3 +143,12 @@
 .RightShare {
   gap: 0.6rem;
 }
+
+@media screen and (width<= 900px) {
+  .cardsListParent {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
