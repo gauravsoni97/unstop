@@ -100,12 +100,42 @@
     flex-direction: column;
   }
 
-  .item_count{
+  .item_count {
     flex-wrap: wrap;
   }
   /* .customborderLeft {
     border-left: 0px solid var(--System-stroke2, #dadce0);
     padding-left: 0rem;
   } */
+}
 
+@media screen and (width <= 600px) {
+  .assessment_heading {
+    font-size: 1rem;
+  }
+  .assessment_item_heading {
+    font-size: 0.7rem;
+  }
+
+  .imgIcon {
+    border-radius: 0.5rem;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item_count {
+    margin: 1rem 0;
+  }
+
+  .countnum_main {
+    font-size: 1rem;
+  }
+
+  .countnum_green {
+    font-size: 0.7rem;
+  }
 }

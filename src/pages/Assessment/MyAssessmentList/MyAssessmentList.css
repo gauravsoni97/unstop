@@ -164,12 +164,7 @@
     bottom: 0rem;
     border-top: 1px dashed #dadce0;
     width: calc(100% - 2rem);
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
+    padding: .5rem 0;
   }
 
   .AssessmentCardParent {
@@ -190,17 +185,20 @@
     bottom: 0rem;
     border-top: 1px dashed #dadce0;
     width: calc(100% - 2rem);
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
+    padding: .5rem 0;
+    
   }
 
   .AssessmentCardParent {
     padding: 0.5rem 1rem;
 
-    min-height: 280px;
+    min-height: 200px;
+  }
+
+  .card_title {
+    font-size: .9rem;
+  }
+  .jobAboutTxt {
+    font-size: 0.75rem;
   }
 }
