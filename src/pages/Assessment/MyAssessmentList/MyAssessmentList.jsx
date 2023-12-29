@@ -8,11 +8,14 @@ import AssessmentCard from "../../../components/AssessmentCard/AssessmentCard";
 import CreateAssessment from "../../../components/Modal/CreateAssessment";
 import { useMediaQuery } from "react-responsive";
 
-const MyAssessmentList = ({ showOverview, setShowOverview }) => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+const MyAssessmentList = ({
+  handleOpen,
+  handleClose,
+  open,
+  setOpen,
+  showOverview,
+  setShowOverview,
+}) => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 924px)" });
 
   return (

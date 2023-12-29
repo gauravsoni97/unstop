@@ -8,6 +8,10 @@ import { useMediaQuery } from "react-responsive";
 
 const MyAssessment = () => {
   const [showOverview, setShowOverview] = useState(true);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 924px)" });
   useEffect(() => {
     if (isTabletOrMobile) {
@@ -18,7 +22,7 @@ const MyAssessment = () => {
   return (
     <div>
       {isTabletOrMobile && (
-        <span className="plusbtnModal">
+        <span className="plusbtnModal" onClick={handleOpen}>
           <AddIcon />
         </span>
       )}
@@ -26,6 +30,10 @@ const MyAssessment = () => {
       {showOverview && <AssessmentOverview />}
       <br />
       <MyAssessmentList
+        handleOpen={handleOpen}
+        handleClose={handleClose}
+        open={open}
+        setOpen={setOpen}
         showOverview={showOverview}
         setShowOverview={() => setShowOverview((prevState) => !prevState)}
       />
