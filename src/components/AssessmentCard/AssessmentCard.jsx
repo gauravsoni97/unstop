@@ -50,9 +50,9 @@ const AssessmentCard = () => {
               sx={{
                 width: 26,
                 height: 26,
-                marginRight: "-.5rem",
+                marginRight: "-.8rem",
                 fontSize: ".8rem",
-                bgcolor: "#E9407A",
+                bgcolor: "#ff6b9f",
                 padding: ".3rem",
               }}
             >
@@ -62,9 +62,9 @@ const AssessmentCard = () => {
               sx={{
                 width: 26,
                 height: 26,
-                marginRight: "-.5rem",
+                marginRight: "-.8rem",
                 fontSize: ".8rem",
-                bgcolor: "#3079E1",
+                bgcolor: "#5299ff",
                 padding: ".3rem",
               }}
             >
@@ -74,9 +74,9 @@ const AssessmentCard = () => {
               sx={{
                 width: 26,
                 height: 26,
-                marginRight: "-.5rem",
+                marginRight: "-.8rem",
                 fontSize: ".8rem",
-                bgcolor: "#6548EE",
+                bgcolor: "#7457ff",
                 padding: ".3rem",
               }}
             >
