@@ -1,8 +1,17 @@
+.tabName{
+  color: var(--Secondary-1, #0073E6);
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600 !important;
+line-height: normal;
+}
 .assessment_heading {
   font-weight: 500;
   font-size: 1.1rem;
   color: #1c4980;
 }
+
 
 .assessment_item_heading {
   color: #1c4980;

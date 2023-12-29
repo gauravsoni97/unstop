@@ -28,20 +28,33 @@ const Assessment = () => {
           >
             <span
               style={{
-                fontWeight: "700",
                 borderRight: "1px solid #eeeeee",
                 padding: "0 1rem",
+                color: "#1C4980",
+                fontSize: "1.25rem",
+                fontWeight: "600",
+                lineHeight: "140%",
               }}
             >
               Assessment
             </span>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="My Assessments" value="1" />
-              <Tab label="Unstop Assessments" value="2" />
+              <Tab
+                className={value === 1 ? "tabName" : " "}
+                style={{ fontWeight: "600" }}
+                label="My Assessments"
+                value="1"
+              />
+              <Tab
+                className={value === 2 ? "tabName" : " "}
+                style={{ fontWeight: "600" }}
+                label="Unstop Assessments"
+                value="2"
+              />
             </TabList>
           </Box>
           <TabPanel value="1">
-            <MyAssessment/>
+            <MyAssessment />
           </TabPanel>
           <TabPanel value="2">Unstop Assessments</TabPanel>
         </TabContext>
