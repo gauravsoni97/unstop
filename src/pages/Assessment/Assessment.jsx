@@ -5,6 +5,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import MyAssessment from "./MyAssessment";
+import mob from "../../assets/assessment/mobile_screen_share.svg";
 
 const Assessment = () => {
   const [value, setValue] = useState("1");
@@ -52,6 +53,9 @@ const Assessment = () => {
                 value="2"
               />
             </TabList>
+            <span style={{ marginLeft: "auto" }}>
+              <img src={mob} alt="" />
+            </span>
           </Box>
           <TabPanel value="1">
             <MyAssessment />

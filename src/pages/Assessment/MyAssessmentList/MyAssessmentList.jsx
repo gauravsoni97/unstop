@@ -32,9 +32,6 @@ const MyAssessmentList = () => {
           <AssessmentCard />
           <AssessmentCard />
           <AssessmentCard />
-          <AssessmentCard />
-          <AssessmentCard />
-          <AssessmentCard />
       </div>
     </section>
     </>
