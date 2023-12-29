@@ -7,12 +7,12 @@ import RoundStatus from "../pages/RoundStatus";
 import MyLibrary from "../pages/MyLibrary";
 
 const RouteList = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/assessment")
-  }, [])
-  
+    navigate("/assessment");
+  }, []);
+
   return (
     <Routes>
       <Route

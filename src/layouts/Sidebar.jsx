@@ -5,7 +5,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Sidebar.css";
-
 import { AdminMenuList } from "../AdminMenuList";
 import { MenuList } from "../MenuList";
 import { useMediaQuery } from "react-responsive";
@@ -30,7 +29,7 @@ const SidebarItem = ({ isTabletOrMobile, menuItem, isActive, onClick }) => (
       display: "flex",
       flexDirection: isTabletOrMobile ? "row" : "column",
       alignItems: "center",
-      justifyContent: isTabletOrMobile ? "start":"center",
+      justifyContent: isTabletOrMobile ? "start" : "center",
     }}
   >
     <ListItemIcon>
@@ -50,7 +49,7 @@ const SidebarItem = ({ isTabletOrMobile, menuItem, isActive, onClick }) => (
         style: {
           fontSize: ".8rem",
           fontWeight: 500,
-          textAlign: isTabletOrMobile ? "left": "center",
+          textAlign: isTabletOrMobile ? "left" : "center",
           marginTop: ".18rem",
           color: isActive ? "#0073E6" : "#1C4980",
         },

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import _ from "lodash";
 import Sidebar from "./Sidebar";
-import { drawerWidth } from "../constant";
 import { useMediaQuery } from "react-responsive";
 
 function MainDrawer(props) {
@@ -19,7 +18,6 @@ function MainDrawer(props) {
     <div
       style={{
         padding: !isTabletOrMobile ? "1rem" : "0.5rem",
-
         position: "absolute",
         paddingTop: isTabletOrMobile ? "3.5rem" : 0,
         top: 0,

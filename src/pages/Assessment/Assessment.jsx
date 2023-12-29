@@ -72,7 +72,10 @@ const Assessment = () => {
         </Box>
       ) : (
         <Box sx={{ width: "100%", typography: "body1" }}>
-          <div className="flex-aicjcsb" style={{marginLeft:"2.5rem" , marginTop:'.5rem'}}>
+          <div
+            className="flex-aicjcsb"
+            style={{ marginLeft: "2.5rem", marginTop: ".5rem" }}
+          >
             <span
               style={{
                 padding: "0 1rem",
