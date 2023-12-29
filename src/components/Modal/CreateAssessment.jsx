@@ -35,8 +35,8 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log("Form submitted!");
   };
-
   const style = {
     position: "absolute",
     top: "50%",
@@ -59,7 +59,11 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
       <Box sx={style} className="modalParent">
         <div className="modalHeader flex-aicjcsb">
           <h2 className="modalHeaderHeading">Create new assessment</h2>
-          <span className="closeModal" onClick={handleClose}>
+          <span
+            style={{ cursor: "pointer" }}
+            className="closeModal"
+            onClick={handleClose}
+          >
             <CloseIcon />
           </span>
         </div>
@@ -152,10 +156,7 @@ const CreateAssessment = ({ open, handleClose, handleOpen }) => {
                 </DemoContainer>
               </LocalizationProvider>
             </div>
-
-            <button type="submit" className="formSubmitbtn">
-              Save
-            </button>
+            <input type="submit" value="Save" className="formSubmitbtn" />
           </form>
         </div>
       </Box>
