@@ -144,6 +144,14 @@
   gap: 0.6rem;
 }
 
+.activeOverview {
+  border: 1px solid #0073e6;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
 @media screen and (width<= 900px) {
   .cardsListParent {
     display: grid;
@@ -165,7 +173,7 @@
   }
 
   .AssessmentCardParent {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 
     min-height: 280px;
   }
@@ -191,7 +199,7 @@
   }
 
   .AssessmentCardParent {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 
     min-height: 280px;
   }

@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Assessment.css";
 import AssessmentOverview from "./AssessmentOverview/AssessmentOverview";
 import MyAssessmentList from "./MyAssessmentList/MyAssessmentList";
 
 const MyAssessment = () => {
+  const [showOverview, setShowOverview] = useState(true);
   return (
     <div>
-      <AssessmentOverview />
+      {showOverview && <AssessmentOverview />}
       <br />
-      <MyAssessmentList />
+      <MyAssessmentList showOverview={showOverview} setShowOverview={() => setShowOverview(prevState => !prevState)}/>
     </div>
   );
 };
