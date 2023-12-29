@@ -19,14 +19,16 @@ function MainDrawer(props) {
   const drawer = (
     <div
       style={{
-        padding: "1rem",
+        padding: !isTabletOrMobile ? "1rem" : "0.5rem",
 
         position: "absolute",
-        top: "2rem",
+        paddingTop: isTabletOrMobile ? "3.5rem" : 0,
+        top: 0,
         left: 0,
         height: "100vh",
-        width: isTabletOrMobile ? "210px" :150,
+        width: isTabletOrMobile ? "210px" : 150,
         background: "white",
+        zIndex: isTabletOrMobile ? 3 : 1,
       }}
     >
       <Sidebar />

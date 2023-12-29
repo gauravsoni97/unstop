@@ -86,5 +86,13 @@ body {
 
   border-radius: 3.75rem;
   background: var(--secondary-5, #f2f8fe);
-  z-index: 3;
+  z-index: 4;
+}
+
+.toggleMobtext {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 4;
+  width: 180px;
 }
