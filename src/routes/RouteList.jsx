@@ -10,15 +10,7 @@ const RouteList = () => {
   return (
     <Routes>
       <Route
-        path="/"
-        element={
-          <DashboardLayout>
-            <Dashboard />
-          </DashboardLayout>
-        }
-      />
-      <Route
-        path="/Dashboard"
+        path="/dashboard"
         element={
           <DashboardLayout>
             <Dashboard />
@@ -34,7 +26,7 @@ const RouteList = () => {
         }
       />
       <Route
-        path="/Library"
+        path="/library"
         element={
           <DashboardLayout>
             <MyLibrary />

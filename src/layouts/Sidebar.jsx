@@ -15,7 +15,7 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
     sx={{
       cursor: "pointer",
       color: isActive ? "#0073E6" : "#E5F1FC",
-      border: isActive ? "2px solid #0073E6" : "transparent",
+      border: isActive ? "1px solid #0073E6" : "transparent",
       backgroundColor: isActive ? "#E5F1FC" : "transparent",
       "&:hover": {
         backgroundColor: "#E5F1FC",
@@ -39,7 +39,7 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
           width: "100%",
           maxWidth: "1.25rem",
           margin: "0 auto",
-          color: isActive ? "#0073E6" : "#8E92BC",
+          color: isActive ? "#0073E6" : "#1C4980",
         }}
         src={menuItem?.icon}
       />
@@ -47,10 +47,11 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
     <ListItemText
       primaryTypographyProps={{
         style: {
-          fontSize: "14px",
-          fontWeight: 600,
+          fontSize: ".8rem",
+          fontWeight: 500,
           textAlign: "center",
-          color: isActive ? "#0073E6" : "#8E92BC",
+          marginTop: ".18rem",
+          color: isActive ? "#0073E6" : "#1C4980",
         },
       }}
       primary={menuItem.text}
