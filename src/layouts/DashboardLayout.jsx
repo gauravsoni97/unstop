@@ -36,7 +36,7 @@ function DashboardLayout(props) {
         style={{
           width: "100%",
           overflow: "hidden",
-          padding: "2rem",
+          padding: ".3rem 1rem",
           maxHeight:"100vh",
           overflowY:'auto'
         }}
@@ -49,10 +49,6 @@ function DashboardLayout(props) {
 }
 
 DashboardLayout.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * Remove this when copying and pasting into your project.
-   */
   window: PropTypes.func,
 };
 
