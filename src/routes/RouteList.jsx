@@ -4,6 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import Assessment from "../pages/Assessment/Assessment";
 import DashboardLayout from "../layouts/DashboardLayout";
 import RoundStatus from "../pages/RoundStatus";
+import MyLibrary from "../pages/MyLibrary";
 
 const RouteList = () => {
   return (
@@ -29,6 +30,14 @@ const RouteList = () => {
         element={
           <DashboardLayout>
             <Assessment />
+          </DashboardLayout>
+        }
+      />
+      <Route
+        path="/Library"
+        element={
+          <DashboardLayout>
+            <MyLibrary />
           </DashboardLayout>
         }
       />

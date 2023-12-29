@@ -1,12 +1,11 @@
 
 import _ from "lodash";
 
-import WidgetsIcon from '@mui/icons-material/Widgets';
-
+import roundIcon from "./assets/sidebar/admin_meds.svg"
 const AdminMenuList = [
   {
     text: "Round Status",
-    icon: WidgetsIcon, 
+    icon: roundIcon, 
     rootpath: "round-status", 
     url: "/round-status", 
     active: false,
