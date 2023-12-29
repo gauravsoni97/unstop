@@ -37,15 +37,17 @@ const Sidebar = () => {
             }}
             sx={{
               cursor: "pointer",
-             
+              color: path === menuItem.rootpath ? "#0073E6" : "#E5F1FC",
               border:
-              path === menuItem.rootpath ? "2px solid #0073E6" : "transparent",
+                path === menuItem.rootpath
+                  ? "2px solid #0073E6"
+                  : "transparent",
               backgroundColor:
                 path === menuItem.rootpath ? "#E5F1FC" : "transparent",
               "&:hover": {
-                backgroundColor: "#E5F1FC", 
+                backgroundColor: "#E5F1FC",
               },
-              padding:"10px 20px",
+              padding: "10px 20px",
             }}
             button
             style={{
@@ -62,9 +64,11 @@ const Sidebar = () => {
                 style={{
                   height: "auto",
                   width: "100%",
-                  maxWidth: "1rem",
+                  maxWidth: "1.25rem",
                   margin: "0 auto",
-                  color: path === menuItem.rootpath ? "black" : "#8E92BC",
+                  color: path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
+                  backgroundcolor:
+                    path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
                 }}
                 src={menuItem?.icon}
               />
@@ -74,8 +78,7 @@ const Sidebar = () => {
                 style: {
                   fontSize: "14px",
                   fontWeight: 600,
-                  // color: "#8E92BC",
-                  color: path === menuItem.rootpath ? "black" : "#8E92BC",
+                  color: path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
                 },
               }}
               primary={menuItem.text}
@@ -83,16 +86,19 @@ const Sidebar = () => {
           </ListItem>
         ))}
       </List>
-      <div
-        style={{
-          margin: "1rem auto",
-          width: "70%",
-          height: "1px",
-          border: "1px dashed gray",
-        }}
-      ></div>
       <center>
-        <Chip label="Admin" style={{ color: "red" }} variant="outlined" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="90"
+          height="2"
+          viewBox="0 0 90 2"
+          fill="none"
+        >
+          <path d="M0 1H90" stroke="#BACBD5" stroke-dasharray="2 2" />
+        </svg>
+      </center>
+      <center>
+        <div className="AdminChip">Admin</div>
       </center>
 
       {adminMenuListItem.map((menuItem, index) => (
@@ -108,11 +114,15 @@ const Sidebar = () => {
           }}
           sx={{
             cursor: "pointer",
+            color: path === menuItem.rootpath ? "#0073E6" : "#E5F1FC",
+            border:
+              path === menuItem.rootpath ? "2px solid #0073E6" : "transparent",
             backgroundColor:
-              path === menuItem.rootpath ? "#F5F5F7" : "transparent",
+              path === menuItem.rootpath ? "#E5F1FC" : "transparent",
             "&:hover": {
-              backgroundColor: "#eee", // Add a different background color on hover
+              backgroundColor: "#E5F1FC",
             },
+            padding: "10px 20px",
           }}
           button
           style={{
@@ -134,9 +144,11 @@ const Sidebar = () => {
               style={{
                 height: "auto",
                 width: "100%",
-                maxWidth: "1rem",
+                maxWidth: "1.25rem",
                 margin: "0 auto",
-                color: path === menuItem.rootpath ? "black" : "#8E92BC",
+                color: path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
+                backgroundcolor:
+                  path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
               }}
               src={menuItem?.icon}
             />
@@ -146,8 +158,9 @@ const Sidebar = () => {
               style: {
                 fontSize: "14px",
                 fontWeight: 600,
+                textAlign: "center",
                 // color: "#8E92BC",
-                color: path === menuItem.rootpath ? "black" : "#8E92BC",
+                color: path === menuItem.rootpath ? "#0073E6" : "#8E92BC",
               },
             }}
             primary={menuItem.text}
