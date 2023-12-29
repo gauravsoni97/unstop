@@ -8,8 +8,9 @@ import "./Sidebar.css";
 
 import { AdminMenuList } from "../AdminMenuList";
 import { MenuList } from "../MenuList";
+import { useMediaQuery } from "react-responsive";
 
-const SidebarItem = ({ menuItem, isActive, onClick }) => (
+const SidebarItem = ({ isTabletOrMobile, menuItem, isActive, onClick }) => (
   <ListItem
     onClick={onClick}
     sx={{
@@ -27,9 +28,9 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
       borderRadius: ".5rem",
       marginBottom: ".3rem",
       display: "flex",
-      flexDirection: "column",
+      flexDirection: isTabletOrMobile ? "row" : "column",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: isTabletOrMobile ? "start":"center",
     }}
   >
     <ListItemIcon>
@@ -49,7 +50,7 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
         style: {
           fontSize: ".8rem",
           fontWeight: 500,
-          textAlign: "center",
+          textAlign: isTabletOrMobile ? "left": "center",
           marginTop: ".18rem",
           color: isActive ? "#0073E6" : "#1C4980",
         },
@@ -60,6 +61,7 @@ const SidebarItem = ({ menuItem, isActive, onClick }) => (
 );
 
 const Sidebar = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 924px)" });
   const navigate = useNavigate();
   const [menuListItem, setMenuListItem] = useState(MenuList);
   const [adminMenuListItem, setAdminMenuListItem] = useState(AdminMenuList);
@@ -82,6 +84,7 @@ const Sidebar = () => {
           <SidebarItem
             key={menuItem.text}
             menuItem={menuItem}
+            isTabletOrMobile={isTabletOrMobile}
             isActive={path === menuItem.rootpath}
             onClick={() =>
               handleItemClick(menuItem, index, menuListItem, setMenuListItem)
@@ -108,6 +111,7 @@ const Sidebar = () => {
           <SidebarItem
             key={menuItem.text}
             menuItem={menuItem}
+            isTabletOrMobile={isTabletOrMobile}
             isActive={path === menuItem.rootpath}
             onClick={() =>
               handleItemClick(

@@ -6,19 +6,17 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-body{
-  background-color: #F6F8FA !important;
+body {
+  background-color: #f6f8fa !important;
 }
-
 
 /* --------- custom classes ---------- */
 
-.whiteRoundCard{
+.whiteRoundCard {
   background-color: white;
   padding: 1rem;
   border-radius: 12px;
 }
-
 
 /* ================== Flexbox Classes ============== */
 
@@ -72,4 +70,21 @@ body{
   gap: 4rem;
 }
 
+/* ===== mob toggle ====  */
 
+.toggleMob {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+
+  border-radius: 3.75rem;
+  background: var(--secondary-5, #f2f8fe);
+  z-index: 3;
+}
